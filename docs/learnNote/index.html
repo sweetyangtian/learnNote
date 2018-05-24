@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>学习笔记 | 默认主题</title>
+    <meta name="description" content="">
+    
+    
+    <link rel="preload" href="/learnNote/assets/css/10.styles.2242a671.css" as="style"><link rel="preload" href="/learnNote/assets/js/app.73ec7bef.js" as="script"><link rel="preload" href="/learnNote/assets/js/7.dd70fd4b.js" as="script"><link rel="prefetch" href="/learnNote/assets/js/6.4ddb3b04.js"><link rel="prefetch" href="/learnNote/assets/js/1.f0823c0f.js"><link rel="prefetch" href="/learnNote/assets/js/2.6e51fb18.js"><link rel="prefetch" href="/learnNote/assets/js/3.56219dd5.js"><link rel="prefetch" href="/learnNote/assets/js/4.0a1eae10.js"><link rel="prefetch" href="/learnNote/assets/js/5.497baaf6.js"><link rel="prefetch" href="/learnNote/assets/js/0.5721d21c.js"><link rel="prefetch" href="/learnNote/assets/js/8.86e42fa1.js"><link rel="prefetch" href="/learnNote/assets/js/9.06679e90.js">
+    <link rel="stylesheet" href="/learnNote/assets/css/10.styles.2242a671.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div><a href="/learnNote/" class="home-link router-link-active"><!----><span class="site-name">
+      学习笔记
+    </span></a><div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""><!----></div><nav class="nav-links can-hide"><div class="nav-item"><a href="/learnNote/" class="nav-link">首页</a></div><div class="nav-item"><a href="/learnNote/learnNote/" class="nav-link router-link-exact-active router-link-active">学习笔记</a></div><div class="nav-item"><a href="/learnNote/jsNote/" class="nav-link">JavaScript</a></div><div class="nav-item"><a href="/learnNote/vueNote/" class="nav-link">Vue</a></div><!----></nav></div></header><div class="sidebar-mask"></div><div class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/learnNote/" class="nav-link">首页</a></div><div class="nav-item"><a href="/learnNote/learnNote/" class="nav-link router-link-exact-active router-link-active">学习笔记</a></div><div class="nav-item"><a href="/learnNote/jsNote/" class="nav-link">JavaScript</a></div><div class="nav-item"><a href="/learnNote/vueNote/" class="nav-link">Vue</a></div><!----></nav><ul class="sidebar-links"><li><a href="/learnNote/learnNote/" class="active sidebar-link">学习笔记</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/learnNote/learnNote/#首页" class="sidebar-link">首页</a></li></ul></li><li><a href="/learnNote/learnNote/one.html" class="sidebar-link">导航</a></li></ul></div><div class="page"><div class="content"><h1 id="默认主题"><a href="#默认主题" aria-hidden="true" class="header-anchor">#</a> 默认主题</h1><div class="tip custom-block"><p class="custom-block-title">提示</p><p>本页所列的选项仅对默认主题生效。如果你在使用一个自定义主题，选项可能会有不同。</p></div><h2 id="首页"><a href="#首页" aria-hidden="true" class="header-anchor">#</a> 首页</h2><p>默认的主题提供了一个首页（Homepage）的布局 (用于 <a href="http://www.baidu.com" target="_blank" rel="noopener noreferrer">这个网站的主页</a> )。想要使用它，需要在你的根级 README.md 的 <a href="http://www.baidu.com" target="_blank" rel="noopener noreferrer">YAML front matter</a> 指定 home: true。以下是这个网站实际使用的数据：</p><pre class="language-js"><code>
+home<span class="token punctuation">:</span> <span class="token boolean">true</span>
+heroImage<span class="token punctuation">:</span> <span class="token operator">/</span>hero<span class="token punctuation">.</span>png
+<span class="highlighted-line">actionText<span class="token punctuation">:</span> 快速上手 →</span>actionLink<span class="token punctuation">:</span> <span class="token operator">/</span>zh<span class="token operator">/</span>guide<span class="token operator">/</span>
+</code></pre><p>任何 <code>YAML front matter</code> 之后额外的内容将会以普通的 <code>markdown</code> 被渲染，并插入到 features 的后面。</p><p>代码行高亮</p><pre class="language-js"><code><span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+  <span class="token function">data</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">{</span>
+<span class="highlighted-line">      msg<span class="token punctuation">:</span> <span class="token string">'Highlighted!'</span></span>    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><!----><div class="content page-nav"><p class="inner"><!----><span class="next"><a href="/learnNote/learnNote/one.html">
+          导航
+        </a> →
+      </span></p></div></div></div></div>
+    <script src="/learnNote/assets/js/7.dd70fd4b.js" defer></script><script src="/learnNote/assets/js/app.73ec7bef.js" defer></script>
+  </body>
+</html>
