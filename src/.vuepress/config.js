@@ -1,8 +1,8 @@
 module.exports = {
   title: '学习笔记',  // 设置网站标题
-  base:'/learnNote/',
+  base:'/sweetLearnNote/',
   repo: 
- 'https://github.com/sweetyangtian/learnNote', // 添加 github 链接
+ 'https://github.com/sweetyangtian/sweetLearnNote', // 添加 github 链接
  dest:'./docs',
   themeConfig: {
     // 添加导航栏  { text: '框架', link: '/' }

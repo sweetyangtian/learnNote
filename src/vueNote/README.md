@@ -15,6 +15,17 @@
 
 > [vue-cli 2.0项目分析](https://segmentfault.com/a/1190000007880723 )
 
+>[官方组件库](https://github.com/vuejs/awesome-vue)
+
+>[taobao vue组件库](http://npm.taobao.org/browse/keyword/vue)
+
+>[vue组件收集](https://www.mmxiaowu.com/article/58481df1d4352863efb55446)
+
+>[vue组件编码规范](https://github.com/pablohpsilva/vuejs-component-style-guide/blob/master/README-CN.md)
+
+>[vue官方风格指南](vue官方风格指南)
+
+
 ### 学习项目
 
 > [基于 vue 全家桶的 spa 项目模板 ](http://www.tuicool.com/articles/beuUBvA)
@@ -31,4 +42,11 @@
 
 > [Vue重构豆瓣APP  ](https://juejin.im/entry/592e89da0ce463006b5106fc )
 
+>[仿美团外卖的全栈项目(vue+node+mongodb)](https://juejin.im/post/5aca46e2f265da238c3af4ca)
+
+>[各种 Vue小项目](https://madewithvuejs.com/vue-fullcalendar)
+
+>[文件上传](https://www.npmjs.com/package/vue-file-upload )
+
+>[vue-bloom-menu](https://github.com/MingSeng-W/vue-bloom-menu)
 

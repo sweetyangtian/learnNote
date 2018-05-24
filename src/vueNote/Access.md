@@ -6,5 +6,5 @@
 
 [VUE另类状态管理](https://github.com/kenberkeley/vue-state-management-alternative/blob/master/README-CN.md)
 
-[权限](https://github.com/OneWayTech/vue-auth-solution)
+[Vue 权限管理解决方案](https://github.com/OneWayTech/vue-auth-solution)
 
