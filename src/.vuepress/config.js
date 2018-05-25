@@ -7,11 +7,10 @@ module.exports = {
   themeConfig: {
     // 添加导航栏  { text: '框架', link: '/' }
     nav: [
-      { text: '首页', link: '/' },
-      { text: '学习笔记', link: '/learnNote/' },
+      { text: '学习笔记', link: '/others/' },
       { text: 'JavaScript', link: '/jsNote/' },
       { text: 'Vue', link: '/vueNote/' },
-      { text: 'others', link: '/others/' }
+      { text: 'others', link: '/learnNote/' }
 
     ],
     // 每个导航栏对应不同侧边栏
@@ -34,7 +33,9 @@ module.exports = {
         ['','目录'],
         ['/others/css','CSS'],
         ['/others/sass','SASS'],
-        ['/others/flex','Flex']
+        ['/others/flex','Flex'],
+        ['/others/phone','Phone'],
+        ['/others/wechart','Wechart']
       ]
     }
 
