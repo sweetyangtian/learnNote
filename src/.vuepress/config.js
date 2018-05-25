@@ -7,17 +7,17 @@ module.exports = {
   themeConfig: {
     // 添加导航栏  { text: '框架', link: '/' }
     nav: [
-      { text: '学习笔记', link: '/others/' },
+      { text: '学习笔记', link: '/learnNote/' },
       { text: 'JavaScript', link: '/jsNote/' },
       { text: 'Vue', link: '/vueNote/' },
-      { text: 'others', link: '/learnNote/' }
+      { text: 'others', link: '/others/' }
 
     ],
     // 每个导航栏对应不同侧边栏
     sidebar:{
-      '/learnNote/':[
-        ['','学习笔记'],
-        ['/learnNote/one','导航']
+      '/others/':[
+        ['','others'],
+        ['/others/one','导航']
       ],
       '/jsNote/':[
         ['',' JavaScript'],
@@ -29,13 +29,13 @@ module.exports = {
         ['/vueNote/SEO','打包优化'],
         ['/vueNote/Access','用户权限控制']
       ],
-      '/others/':[
-        ['','目录'],
-        ['/others/css','CSS'],
-        ['/others/sass','SASS'],
-        ['/others/flex','Flex'],
-        ['/others/phone','Phone'],
-        ['/others/wechart','Wechart']
+      '/learnNote/':[
+        ['','资源网站'],
+        ['/learnNote/css','CSS'],
+        ['/learnNote/sass','SASS'],
+        ['/learnNote/flex','Flex'],
+        ['/learnNote/phone','Phone'],
+        ['/learnNote/wechart','Wechart']
       ]
     }
 
