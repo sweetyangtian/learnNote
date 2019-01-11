@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>学习笔记 | vue-cli 3.x</title>
+    <meta name="description" content="">
+    
+    
+    <link rel="preload" href="/sweetLearnNote/assets/css/18.styles.2c39990c.css" as="style"><link rel="preload" href="/sweetLearnNote/assets/js/app.e5601e0e.js" as="script"><link rel="preload" href="/sweetLearnNote/assets/js/2.60c45cf5.js" as="script"><link rel="prefetch" href="/sweetLearnNote/assets/js/9.70ab4479.js"><link rel="prefetch" href="/sweetLearnNote/assets/js/0.8cb660a1.js"><link rel="prefetch" href="/sweetLearnNote/assets/js/1.b71d7909.js"><link rel="prefetch" href="/sweetLearnNote/assets/js/3.9252117b.js"><link rel="prefetch" href="/sweetLearnNote/assets/js/4.b6648632.js"><link rel="prefetch" href="/sweetLearnNote/assets/js/5.d89a6dc2.js"><link rel="prefetch" href="/sweetLearnNote/assets/js/6.94abd5d3.js"><link rel="prefetch" href="/sweetLearnNote/assets/js/7.b672e33a.js"><link rel="prefetch" href="/sweetLearnNote/assets/js/8.d21e556a.js"><link rel="prefetch" href="/sweetLearnNote/assets/js/10.387e71e0.js"><link rel="prefetch" href="/sweetLearnNote/assets/js/11.4a180f15.js"><link rel="prefetch" href="/sweetLearnNote/assets/js/12.49e089b6.js"><link rel="prefetch" href="/sweetLearnNote/assets/js/13.3d34864b.js"><link rel="prefetch" href="/sweetLearnNote/assets/js/14.a43d6e0c.js"><link rel="prefetch" href="/sweetLearnNote/assets/js/15.1410e0a9.js"><link rel="prefetch" href="/sweetLearnNote/assets/js/16.f67d39e3.js"><link rel="prefetch" href="/sweetLearnNote/assets/js/17.75cfbd8f.js">
+    <link rel="stylesheet" href="/sweetLearnNote/assets/css/18.styles.2c39990c.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div><a href="/sweetLearnNote/" class="home-link router-link-active"><!----><span class="site-name">
+      学习笔记
+    </span></a><div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""><!----></div><nav class="nav-links can-hide"><div class="nav-item"><a href="/sweetLearnNote/learnNote/" class="nav-link">学习笔记</a></div><div class="nav-item"><a href="/sweetLearnNote/jsNote/" class="nav-link">JavaScript</a></div><div class="nav-item"><a href="/sweetLearnNote/vueNote/" class="nav-link router-link-active">Vue</a></div><div class="nav-item"><a href="/sweetLearnNote/others/" class="nav-link">others</a></div><!----></nav></div></header><div class="sidebar-mask"></div><div class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/sweetLearnNote/learnNote/" class="nav-link">学习笔记</a></div><div class="nav-item"><a href="/sweetLearnNote/jsNote/" class="nav-link">JavaScript</a></div><div class="nav-item"><a href="/sweetLearnNote/vueNote/" class="nav-link router-link-active">Vue</a></div><div class="nav-item"><a href="/sweetLearnNote/others/" class="nav-link">others</a></div><!----></nav><ul class="sidebar-links"><li><a href="/sweetLearnNote/vueNote/" class="sidebar-link">主要网站</a></li><li><a href="/sweetLearnNote/vueNote/laravel.html" class="sidebar-link">Laravel</a></li><li><a href="/sweetLearnNote/vueNote/ssr.html" class="sidebar-link">SSR</a></li><li><a href="/sweetLearnNote/vueNote/SEO.html" class="sidebar-link">打包优化</a></li><li><a href="/sweetLearnNote/vueNote/Access.html" class="sidebar-link">用户权限控制</a></li><li><a href="/sweetLearnNote/vueNote/cli.html" class="active sidebar-link">vue-cli</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/sweetLearnNote/vueNote/cli.html#vue-cli-3-x" class="sidebar-link">vue-cli 3.x</a></li></ul></li></ul></div><div class="page"><div class="content"><h2 id="vue-cli-3-x"><a href="#vue-cli-3-x" aria-hidden="true" class="header-anchor">#</a> vue-cli 3.x</h2><h3 id="安装"><a href="#安装" aria-hidden="true" class="header-anchor">#</a> 安装</h3><p>npm install -g @vue/cli</p><h3 id="启动"><a href="#启动" aria-hidden="true" class="header-anchor">#</a> 启动</h3><p>cmd 运行 vue ui 就会启动一个本地服务，进入一个控制台界面</p><h3 id="创建项目"><a href="#创建项目" aria-hidden="true" class="header-anchor">#</a> 创建项目</h3><p>1.填写项目名</p><p>2.选择包管理器</p><p>3.选择初始化git仓库</p><p>下一步：</p><ol><li>选择创建模式：</li></ol><p>默认(包含babel,eslint)</p><p>手动：会让我们选择需要使用的库和插件，如bebel、vuex、vue-router 等</p><ol start="2"><li>进入到插件的具体配置,配置完成保存</li></ol><p>此时会询问是否保存为新预设，是让你保存本次的配置，下次创建项目可以直接使用保存的这套配置。</p><p>此时可以看到控制台正在下载项目所需要的库，跟使用 vue create 命令做的事情一样，只是把操作可视化了。</p><h3 id="菜单"><a href="#菜单" aria-hidden="true" class="header-anchor">#</a> 菜单</h3><ol><li><p>插件：可以从插件商店下载安装各种网上都插件</p></li><li><p>配置： 对已安装对插件配置管理</p></li><li><p>任务：就是各种可运行的命令，如打包、本地调试，可以在这里看到对项目打包文件对分析。</p></li></ol><p>运行 serve 任务，访问localhost:8080，新建的项目就可以跑起来了</p><h3 id="其他功能"><a href="#其他功能" aria-hidden="true" class="header-anchor">#</a> 其他功能</h3><p>1、导入项目：
+可以导入本地的项目进控制台管理</p><p>2、管理项目：
+列出已有的项目，此时已经可以看到刚刚新建的项目。</p><p>3、目录结构
+通过cli 3.x 新建的项目的结构较之前简单，只有 public 和 src 两个文件夹</p><p>4、 自定义配置：
+此时很多朋友会问了，没有配置文件，那我需要自定义一个配置咋办呢？
+莫慌，此时我们只需要在项目根目录新建一个 vue.config.js 文件就能使用自定义配置了</p><pre class="language-js"><code>module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  baseUrl<span class="token punctuation">:</span> process<span class="token punctuation">.</span>env<span class="token punctuation">.</span><span class="token constant">NODE_ENV</span> <span class="token operator">===</span> <span class="token string">'production'</span>
+    <span class="token operator">?</span> <span class="token string">'/production-sub-path/'</span>
+    <span class="token punctuation">:</span> <span class="token string">'/'</span><span class="token punctuation">,</span>
+  devServer<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    port<span class="token punctuation">:</span> <span class="token number">8000</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre><p>更多详细配置查看<a href="https://cli.vuejs.org/config/#global-cli-config" target="_blank" rel="noopener noreferrer">这里</a></p></div><!----><div class="content page-nav"><p class="inner"><span class="prev">
+        ← <a href="/sweetLearnNote/vueNote/Access.html" class="prev">
+          用户权限控制
+        </a></span><!----></p></div></div></div></div>
+    <script src="/sweetLearnNote/assets/js/2.60c45cf5.js" defer></script><script src="/sweetLearnNote/assets/js/app.e5601e0e.js" defer></script>
+  </body>
+</html>
