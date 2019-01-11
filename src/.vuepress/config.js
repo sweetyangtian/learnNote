@@ -27,8 +27,7 @@ module.exports = {
         ['/vueNote/laravel','Laravel'],
         ['/vueNote/ssr','SSR'],
         ['/vueNote/SEO','打包优化'],
-        ['/vueNote/Access','用户权限控制'],
-        ['/vueNote/cli','vue-cli']
+        ['/vueNote/Access','用户权限控制']
       ],
       '/learnNote/':[
         ['','资源网站'],
