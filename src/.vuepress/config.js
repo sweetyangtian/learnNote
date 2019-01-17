@@ -16,8 +16,8 @@ module.exports = {
     // 每个导航栏对应不同侧边栏
     sidebar:{
       '/others/':[
-        ['','others'],
-        ['/others/one','导航']
+        ['','编辑器'],
+        ['/others/nrm','nrm']
       ],
       '/jsNote/':[
         ['',' JavaScript'],

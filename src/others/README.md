@@ -1,28 +1,70 @@
 
-# 默认主题
+# 编辑器
 
-::: tip 提示
-本页所列的选项仅对默认主题生效。如果你在使用一个自定义主题，选项可能会有不同。
+## Vs Code
+::: tip 下载
+VS Code比Atom更加的流畅，比webstorm更轻量级,
+下载软件后，一定要，安装，安装，安装！
+
+[https://code.visualstudio.com/](https://code.visualstudio.com/)
 :::
-## 首页
-默认的主题提供了一个首页（Homepage）的布局 (用于 [这个网站的主页](http://www.baidu.com) )。想要使用它，需要在你的根级 README.md 的 [YAML front matter](http://www.baidu.com) 指定 home: true。以下是这个网站实际使用的数据：
-```js{4}
 
-home: true
-heroImage: /hero.png
-actionText: 快速上手 →
-actionLink: /zh/guide/
-```
+### 主题插件推荐
 
-任何 `YAML front matter` 之后额外的内容将会以普通的 `markdown` 被渲染，并插入到 features 的后面。
+One Dark Pro     Eva Theme
 
-代码行高亮
-```js{4}
-export default {
-  data () {
-    return {
-      msg: 'Highlighted!'
-    }
-  }
-}
-```
+Atom One Dark Theme
+
+
+
+
+### 开发插件推荐
+
+>Chinese (Simplified) Language Pack for Visual Studio Code 
+
+适用于 VS Code 的中文（简体）语言包。
+
+>vscode-icons 
+
+一套vs code的图标插件。
+
+>Auto Close Tag 
+
+匹配标签，关闭对应的标签。对于HTML/XML很实用
+
+>Auto Rename Tag
+
+改变标签的时候同时改动开闭合标签；对于HTML/XML很实用。
+
+>HTML CSS Support  HTML必备插件之一。
+
+>beautify 
+
+格式化JSON|JS|HTML|CSS|SCSS，良好的拓展性，比内置格式化好用；但是react工程的jsx文件用beautify插件格式化会乱掉，建议不要用
+
+>Bracket Pair Colorizer
+
+多个括号时颜色区分
+
+>Local History 
+
+本地代码保存日志，在没有git,svn，或者很长时间没有提交过代码的情况下，很实用，再也不怕代码回滚
+
+### SVN
+
+扩展商店 搜索安装 SVN，安装完成后，重新启动SVN或者点击SVN“重新加载” 
+本人SVN不是默认安装位置，但是无需修改vscode‘用户设置’中的任何选项
+
+>查看SVN版本控制
+
+CHANGES 
+本地发生变化的文件列表，即本地被修改的文件 
+
+UNVERSIONED 
+新增加的文件或文件夹列表，SVN上没有 
+
+REMOTE CHANGES 
+SVN上文件发生变更列表（其他人提交的文件）
+
+本次提交不想提交的文件，可以选中文件右侧小图标"set changelist"--点击选择  "ignore-on-commit",想提交时，再选择remove changelist即可将该文件加入到“change”文件列表
+
