@@ -8,7 +8,7 @@
 
 [阮一峰的网络日志](http://www.ruanyifeng.com/blog/)
 
-[javascript](http://javascript.ruanyifeng.com/)
+[阮一峰 javascript](http://javascript.ruanyifeng.com/)
 
 [阮一峰 ES6](http://es6.ruanyifeng.com/)
 

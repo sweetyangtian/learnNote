@@ -68,3 +68,6 @@ SVN上文件发生变更列表（其他人提交的文件）
 
 本次提交不想提交的文件，可以选中文件右侧小图标"set changelist"--点击选择  "ignore-on-commit",想提交时，再选择remove changelist即可将该文件加入到“change”文件列表
 
+###Git
+
+vscode 使用git,

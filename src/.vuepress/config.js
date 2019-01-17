@@ -17,7 +17,8 @@ module.exports = {
     sidebar:{
       '/others/':[
         ['','编辑器'],
-        ['/others/nrm','nrm']
+        ['/others/nrm','nrm'],
+        ['/others/git','Git']
       ],
       '/jsNote/':[
         ['',' JavaScript'],
