@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>学习笔记 | Git</title>
+    <meta name="description" content="">
+    
+    
+    <link rel="preload" href="/sweetLearnNote/assets/css/styles.0fdc3001.css" as="style"><link rel="preload" href="/sweetLearnNote/assets/js/app.0fdc3001.js" as="script"><link rel="preload" href="/sweetLearnNote/assets/js/4.3e6265dd.js" as="script"><link rel="prefetch" href="/sweetLearnNote/assets/js/1.14a32e29.js"><link rel="prefetch" href="/sweetLearnNote/assets/js/10.4783ac29.js"><link rel="prefetch" href="/sweetLearnNote/assets/js/11.067522d4.js"><link rel="prefetch" href="/sweetLearnNote/assets/js/12.bb5ee4b0.js"><link rel="prefetch" href="/sweetLearnNote/assets/js/13.0bf6af58.js"><link rel="prefetch" href="/sweetLearnNote/assets/js/14.07831e73.js"><link rel="prefetch" href="/sweetLearnNote/assets/js/15.7545bc55.js"><link rel="prefetch" href="/sweetLearnNote/assets/js/16.5c5b51f6.js"><link rel="prefetch" href="/sweetLearnNote/assets/js/17.bfb62905.js"><link rel="prefetch" href="/sweetLearnNote/assets/js/18.345ee9bc.js"><link rel="prefetch" href="/sweetLearnNote/assets/js/2.56f87ee2.js"><link rel="prefetch" href="/sweetLearnNote/assets/js/3.80073217.js"><link rel="prefetch" href="/sweetLearnNote/assets/js/5.8c5d71f4.js"><link rel="prefetch" href="/sweetLearnNote/assets/js/6.5c0e97f0.js"><link rel="prefetch" href="/sweetLearnNote/assets/js/7.e3a918ad.js"><link rel="prefetch" href="/sweetLearnNote/assets/js/8.244ea6f7.js"><link rel="prefetch" href="/sweetLearnNote/assets/js/9.79fe80b4.js">
+    <link rel="stylesheet" href="/sweetLearnNote/assets/css/styles.0fdc3001.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div><a href="/sweetLearnNote/" class="home-link router-link-active"><!----><span class="site-name">
+      学习笔记
+    </span></a><div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""><!----></div><nav class="nav-links can-hide"><div class="nav-item"><a href="/sweetLearnNote/learnNote/" class="nav-link">学习笔记</a></div><div class="nav-item"><a href="/sweetLearnNote/jsNote/" class="nav-link">JavaScript</a></div><div class="nav-item"><a href="/sweetLearnNote/vueNote/" class="nav-link">Vue</a></div><div class="nav-item"><a href="/sweetLearnNote/others/" class="nav-link router-link-active">others</a></div><!----></nav></div></header><div class="sidebar-mask"></div><div class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/sweetLearnNote/learnNote/" class="nav-link">学习笔记</a></div><div class="nav-item"><a href="/sweetLearnNote/jsNote/" class="nav-link">JavaScript</a></div><div class="nav-item"><a href="/sweetLearnNote/vueNote/" class="nav-link">Vue</a></div><div class="nav-item"><a href="/sweetLearnNote/others/" class="nav-link router-link-active">others</a></div><!----></nav><ul class="sidebar-links"><li><a href="/sweetLearnNote/others/" class="sidebar-link">编辑器</a></li><li><a href="/sweetLearnNote/others/nrm.html" class="sidebar-link">nrm</a></li><li><a href="/sweetLearnNote/others/git.html" class="active sidebar-link">Git</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/sweetLearnNote/others/git.html#git" class="sidebar-link">Git</a></li></ul></li><li><a href="/sweetLearnNote/others/svn.html" class="sidebar-link">svn</a></li><li><a href="/sweetLearnNote/others/webApp.html" class="sidebar-link">渐进式 Web 应用</a></li></ul></div><div class="page"><div class="content"><h2 id="git"><a href="#git" aria-hidden="true" class="header-anchor">#</a> Git</h2><p><a href="https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000" target="_blank" rel="noopener noreferrer">廖雪峰的网站-详细Git教程</a></p><p>github客户端-方便代码提交和操作</p><p><img src="/sweetLearnNote/assets/img/github.962e0377.png" alt="github"></p><h3 id="命令总结"><a href="#命令总结" aria-hidden="true" class="header-anchor">#</a> 命令总结</h3><blockquote><p>新建仓库</p></blockquote><pre class="language-js"><code>$ git init <span class="token comment">// 把这个目录变成Git可以管理的仓库,当前目录下多了一个.git的目录，这个目录是Git来跟踪管理版本库的,如果这个目录默认是隐藏的，用ls -ah命令就可以看见</span>
+<span class="token operator">&gt;</span>随便新建一个readme<span class="token punctuation">.</span>txt文件
+$ git add readme<span class="token punctuation">.</span>txt <span class="token comment">// 添加文件到库</span>
+$ git commit <span class="token operator">-</span>m <span class="token string">&quot;wrote a readme file&quot;</span> <span class="token comment">// 文件提交到仓库</span>
+<span class="token punctuation">[</span><span class="token function">master</span> <span class="token punctuation">(</span>root<span class="token operator">-</span>commit<span class="token punctuation">)</span> eaadf4e<span class="token punctuation">]</span> wrote a readme file
+ <span class="token number">1</span> file changed<span class="token punctuation">,</span> <span class="token number">2</span> <span class="token function">insertions</span><span class="token punctuation">(</span><span class="token operator">+</span><span class="token punctuation">)</span>
+ create mode <span class="token number">100644</span> readme<span class="token punctuation">.</span>txt
+
+$ git status命令可以让我们时刻掌握仓库当前的状态
+</code></pre><blockquote><p>修改文件</p></blockquote><pre class="language-js"><code>
+$ git diff  <span class="token comment">// 查看文件修改内容</span>
+$ git status <span class="token comment">//看看当前仓库的状态</span>
+$ git add
+$ git commit
+$ git log <span class="token comment">// 查看历史记录 $ git log --pretty=oneline</span>
+</code></pre><blockquote><p>回退版本</p></blockquote><pre class="language-js"><code>
+<span class="token comment">// 在Git中，用HEAD表示当前版本，上一个版本就是HEAD^，上上一个版本就是HEAD^^,版本太多写成HEAD~100</span>
+$ git reset <span class="token operator">--</span>hard <span class="token constant">HEAD</span><span class="token operator">^</span> 
+或者
+$ git reset <span class="token operator">--</span>hard <span class="token number">1094</span>a（版本号commit id<span class="token operator">-</span>前几位即可）
+
+<span class="token comment">// 后悔药：Git提供了一个命令git reflog用来记录你的每一次命令,即可查到commit id</span>
+$ git reflog
+e475afc <span class="token constant">HEAD</span>@<span class="token punctuation">{</span><span class="token number">1</span><span class="token punctuation">}</span><span class="token punctuation">:</span> reset<span class="token punctuation">:</span> moving to <span class="token constant">HEAD</span><span class="token operator">^</span>
+<span class="token number">1094</span><span class="token function">adb</span> <span class="token punctuation">(</span><span class="token constant">HEAD</span> <span class="token operator">-</span><span class="token operator">&gt;</span> master<span class="token punctuation">)</span> <span class="token constant">HEAD</span>@<span class="token punctuation">{</span><span class="token number">2</span><span class="token punctuation">}</span><span class="token punctuation">:</span> commit<span class="token punctuation">:</span> append <span class="token constant">GPL</span>
+
+</code></pre><blockquote><p>分支</p></blockquote><pre class="language-js"><code>
+$ git branch dev            <span class="token comment">// 创建dev分支-- git branch命令查看当前分支</span>
+$ git checkout dev          <span class="token comment">// 切换到dev分支 也可用合集 $ git checkout -b dev           </span>
+$ git checkout master       <span class="token comment">// dev分支的工作完成，切换回master分支</span>
+$ git merge dev             <span class="token comment">// 把dev分支的工作成果合并到master分支上</span>
+$ git branch <span class="token operator">-</span>d <span class="token operator">&lt;</span>name<span class="token operator">&gt;</span>      <span class="token comment">// 删除分支</span>
+</code></pre><p>注意： 合并分支时，如果可能，Git会用Fast forward模式，删除分支后，会丢掉分支信息。所以要强制禁用Fast forward模式，Git就会在merge时生成一个新的commit，这样，从分支历史上就可以看出分支信息。使用命令：
+$ git merge --no-ff -m &quot;merge with no-ff&quot; dev</p><blockquote><p>冲突</p></blockquote><pre class="language-js"><code>$ git merge feature1
+<span class="token comment">// 修改冲突文件readme.txt,Git用&lt;&lt;&lt;&lt;&lt;&lt;&lt;，=======，&gt;&gt;&gt;&gt;&gt;&gt;&gt;标记出不同分支的内容</span>
+<span class="token comment">// 解决冲突后</span>
+$ git add readme<span class="token punctuation">.</span>txt 
+$ git commit <span class="token operator">-</span>m <span class="token string">&quot;conflict fixed&quot;</span>
+</code></pre><blockquote><p>bug 分支</p></blockquote><p>修复一个代号101的bug</p><pre class="language-js"><code>$ git stash                     <span class="token comment">// 把当前工作现场“储藏”起来</span>
+</code></pre><pre class="language-js"><code>$ git checkout master           <span class="token comment">// 切换到bug修复分支</span>
+$ git checkout <span class="token operator">-</span>b issue<span class="token operator">-</span><span class="token number">101</span>     <span class="token comment">// 创建bug分支</span>
+
+$ git add readme<span class="token punctuation">.</span>txt            <span class="token comment">// 提交</span>
+$ git commit <span class="token operator">-</span>m <span class="token string">&quot;fix bug 101&quot;</span>   
+
+$ git checkout master           <span class="token comment">// 切换到bug修复分支</span>
+$ git merge <span class="token operator">--</span>no<span class="token operator">-</span>ff <span class="token operator">-</span>m <span class="token string">&quot;merged bug fix 101&quot;</span> issue<span class="token operator">-</span><span class="token number">101</span>  <span class="token comment">// 合并--bug修复完成</span>
+
+$ git checkout dev              <span class="token comment">//切回工作分支</span>
+$ git status
+$ git stash list                <span class="token comment">// 查看存储列表</span>
+stash@<span class="token punctuation">{</span><span class="token number">0</span><span class="token punctuation">}</span><span class="token punctuation">:</span> <span class="token constant">WIP</span> on dev<span class="token punctuation">:</span> f52c633 add merge
+
+$ git stash apply stash@<span class="token punctuation">{</span><span class="token number">0</span><span class="token punctuation">}</span>     <span class="token comment">// 恢复</span>
+$ git stash drop  stash@<span class="token punctuation">{</span><span class="token number">0</span><span class="token punctuation">}</span>     <span class="token comment">// 删除存储</span>
+</code></pre><pre class="language-js"><code>$ git stash pop                 <span class="token comment">// 恢复+删除</span>
+</code></pre></div><!----><div class="content page-nav"><p class="inner"><span class="prev">
+        ← <a href="/sweetLearnNote/others/nrm.html" class="prev">
+          nrm
+        </a></span><span class="next"><a href="/sweetLearnNote/others/svn.html">
+          svn
+        </a> →
+      </span></p></div></div></div></div>
+    <script src="/sweetLearnNote/assets/js/app.0fdc3001.js" defer></script><script src="/sweetLearnNote/assets/js/4.3e6265dd.js" defer></script>
+  </body>
+</html>
