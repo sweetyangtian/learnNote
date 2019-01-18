@@ -18,7 +18,9 @@ module.exports = {
       '/others/':[
         ['','编辑器'],
         ['/others/nrm','nrm'],
-        ['/others/git','Git']
+        ['/others/git','Git'],
+        ['/others/svn','svn'],
+        ['/others/webApp','渐进式 Web 应用']
       ],
       '/jsNote/':[
         ['',' JavaScript'],
